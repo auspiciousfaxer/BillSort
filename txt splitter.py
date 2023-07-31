@@ -1,3 +1,5 @@
+###Splits batch-scanned bill memo txt file into individual bill memo txt files based on given separator string###
+
 def splitFile(inputFile, outputFolder):
     with open(inputFile, 'r', encoding='utf-8') as largeFile:
         content = largeFile.read()
