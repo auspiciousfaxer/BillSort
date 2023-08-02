@@ -8,7 +8,7 @@ def splitFile(inputFile, outputFolder):
 
     for i, section in enumerate(sections, start=1):
         # Create individual file names for each section based on the index
-        outputFile = f"{output_folder}/section_{i}.txt"
+        outputFile = f"{outputFolder}/bill{i}.txt"
 
         # Write the section to a separate file
         with open(outputFile, 'w', encoding='utf-8') as output:
@@ -16,7 +16,6 @@ def splitFile(inputFile, outputFolder):
 
 
 if __name__ == "__main__":
-    inputFilePath = "txt file path"   # Replace with the path to your large txt file
-    outputFolderPath = "output folder path"  # Replace with the path to your output folder
-
-    splitLargeFile(inputFilePath, outputFolderPath)
+    corpus = "/Users/ronalddeng/Desktop/internship/autoinput/data corpus.txt"   # Replace with the path to your large txt file
+    bills = "/Users/ronalddeng/Desktop/internship/autoinput/split bills"  # Replace with the path to your output folder
+    splitFile(corpus, bills)
