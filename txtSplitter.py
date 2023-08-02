@@ -14,7 +14,6 @@ def splitFile(inputFile, outputFolder):
         with open(outputFile, 'w', encoding='utf-8') as output:
             output.write(section)
 
-
 if __name__ == "__main__":
     corpus = "/path/to/data/corpus"   # Replace with the path to your large txt file
     bills = "/path/to/output/folder"  # Replace with the path to your output folder
