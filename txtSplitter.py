@@ -16,6 +16,6 @@ def splitFile(inputFile, outputFolder):
 
 
 if __name__ == "__main__":
-    corpus = "/Users/ronalddeng/Desktop/internship/autoinput/data corpus.txt"   # Replace with the path to your large txt file
-    bills = "/Users/ronalddeng/Desktop/internship/autoinput/split bills"  # Replace with the path to your output folder
+    corpus = "/path/to/data/corpus"   # Replace with the path to your large txt file
+    bills = "/path/to/output/folder"  # Replace with the path to your output folder
     splitFile(corpus, bills)
